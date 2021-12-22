@@ -1,0 +1,336 @@
+/* ==========================================================================
+Slider core styles
+===========================================================================*/
+
+.active {
+    outline: 3px solid #196cd2;
+    box-shadow: 2px 2px 20px 4px rgba(0, 0, 0, .5);
+}
+
+.titleone {
+    position: relative;
+    z-index: 1 ;
+    top: 200px;
+    width: 350px;
+    height: 130px;
+    box-shadow: 2px 2px 20px 4px rgba(0, 0, 0, .5);
+}
+
+.titletwo {
+    position: relative;
+    left: 600px;
+    width: 160px;
+    height: 55px;
+    bottom: 50px;
+}
+
+.slider-container {
+    position: relative;
+
+    overflow: hidden;
+
+    width: 100%;
+    height: 670px;
+    margin: 0 auto;
+
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+}
+
+.slider__item {
+    position: relative;
+
+    width: 100vw;
+    height: 670px;
+    margin: 0 auto;
+    padding: 0;
+
+    transition: .5s;
+}
+
+.slider__item img {
+    position: absolute;
+    z-index: 998;
+    bottom: 65%;
+    left: 580px;
+    max-height: 450px;
+    max-width: 550px;
+
+    display: block;
+
+    transform: translateY(50%);
+}
+
+.slider__item a {
+    position: absolute;
+    width: 160px;
+    height: 80px;
+    top: 600px;
+    left: 600px;
+}
+
+.slider {
+    position: absolute;
+    z-index: 1;
+
+    width: 800vw;
+    height: 670px;
+    margin: 0 auto;
+
+    transition: .5s;
+}
+
+.slider .slider__item {
+    float: left;
+
+    height: 670px;
+}
+
+.preview {
+    position: absolute;
+    z-index: 998;
+    top: 529px;
+    left: 60px;
+
+    width: 360px;
+}
+
+.nm {
+    position: absolute;
+    font-size: 30px;
+    color: #fff;
+    top: 250px;
+    left: 210px;
+}
+
+.ab {
+    position: absolute;
+    top: 400px;
+    left: 600px;
+
+    display: block;
+
+    width: 540px;
+}
+
+.slider__caption {
+    font-size: 25px;
+    font-weight: 800;
+    color: #0e4647;
+
+    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr='#99000000', endColorstr='#99000000');
+    /* ie8 */
+}
+
+.slider__caption[disabled] {
+    visibility: hidden;
+
+    opacity: 0;
+}
+
+
+.arrow {
+    position: absolute;
+    z-index: 998;
+    top: 450px;
+
+    cursor: pointer;
+}
+
+.prev {
+    left: 0;
+}
+
+.next {
+    right: 60%;
+}
+
+.preview .on {
+    width: 40px;
+    height: 10px;
+    margin-right: 26px;
+    background-image: url("../../../public/productinfo_icon/btn_2.png");
+    background-size: 40px 10px;
+    transition: width 0.5s;
+    margin-top: 3px;
+}
+
+.preview span {
+    float: left;
+
+    width: 16px;
+    height: 16px;
+    margin-right: 26px;
+
+    cursor: pointer;
+
+    /* border: 2px solid black;
+    border-radius: 50%; */
+    background-image: url("../../../public/productinfo_icon/btn_1.png");
+    background-size: 16px 16px;
+}
+
+
+.preview a {
+    display: inline-block;
+
+    margin: 11px;
+}
+
+/* 
+@media screen and (max-width: 768px)
+{
+    .active
+    {
+        outline: 3px solid #196cd2;
+        box-shadow: 2px 2px 20px 4px rgba(0,0,0,.5);
+    }
+
+    .slider-container
+    {
+        position: relative;
+
+        overflow: hidden;
+
+        width: 100%;
+        height: 100%;
+        margin: 0 auto;
+
+        -webkit-user-select: none;
+           -moz-user-select: none;
+            -ms-user-select: none;
+                user-select: none;
+
+        background-color: #fff;
+    }
+
+    .slider__item
+    {
+        position: relative;
+
+        margin: 0;
+        padding: 0;
+
+        transition: .2s;
+    }
+    .slider__item img
+    {
+        position: absolute;
+        bottom: 40%;
+        left: 10%;
+
+        display: block;
+
+        width: 80%;
+    }
+
+
+    .slider
+    {
+        position: absolute;
+        z-index: 1;
+
+        width: 400vw;
+        min-width: 1200px;
+
+        transition: .5s;
+    }
+
+    .slider .slider__item
+    {
+        float: left;
+
+        height: 54rem;
+    }
+
+    .preview
+    {
+        display: none;
+    }
+
+    .slider__item a
+    {
+        font-size: 30px;
+
+        text-decoration: none;
+
+        color: #32c6b1;
+    }
+
+    .ab
+    {
+        position: absolute;
+        top: 10.5rem;
+        left: 4.25rem;
+
+        display: block;
+
+        width: 50%;
+    }
+
+    .slider__caption
+    {
+        display: none;
+    }
+    .slider__caption[disabled]
+    {
+        visibility: hidden;
+
+        opacity: 0;
+    }
+
+
+    .arrow
+    {
+        position: absolute;
+        z-index: 2;
+        top: 50%;
+
+        cursor: pointer;
+        transform: translateY(50%);
+    }
+    .arrow img{
+        width: 30px;
+    }
+
+    .prev
+    {
+        left: 2.3rem;
+    }
+
+    .next
+    {
+        right: 2.3rem;
+    }
+
+    .preview .on
+    {
+        border: 2px solid green;
+        border-radius: 50%;
+    }
+
+    .preview span
+    {
+        float: left;
+
+        width: 16px;
+        height: 16px;
+        margin-right: 22px;
+
+        cursor: pointer;
+
+        border: 2px solid black;
+        border-radius: 50%;
+    }
+
+
+    .preview a
+    {
+        display: inline-block;
+
+        margin: 11px;
+    }
+} */

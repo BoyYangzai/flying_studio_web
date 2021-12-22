@@ -1,0 +1,79 @@
+.depart{
+    position: relative;
+    height: 800px;
+    width: 100%;
+}
+
+.back_ground{
+    position: absolute;
+    top: 100px;
+    left: 120px;
+    width: 480px;
+    height: 550px;
+}
+
+.depart_list{
+    width: 700vw;
+    height: 550px;
+    position: absolute;
+}
+
+
+.depart_slide{
+    position: relative;
+    top: 100px;
+    float: left;
+    width: 100vw;
+    height: 550px;
+}
+
+.depart_slide span{
+    position: absolute;
+    display:block;
+    color: #fff;
+    top: 255px;
+    left: 180px;
+    font-size: 30px;
+    font-weight: 500;
+    width: 100px;
+}
+
+.depart_slide p{
+    position: absolute;
+    display:block;
+    color: #fff;
+    top: 310px;
+    left: 180px;
+    font-size: 17px;
+    width: 400px;
+
+}
+
+
+.depart_slide img{
+    position: absolute;
+    left:600px;
+    width: 935.5px;
+    height: 550px;
+}
+
+.d-arrow{
+    position: absolute;
+    display: block;
+    width: 70px;
+    height: 70px;
+    top: 340px;
+}
+
+.d-btn{
+    width: 100%;
+    height: 100%;
+}
+
+.d_prev{
+    right: 830px;
+}
+
+.d_next{
+    right: 0px;
+}

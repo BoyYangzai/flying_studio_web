@@ -1,0 +1,230 @@
+导航栏位置大小
+header {
+    position: fixed;
+    z-index: 999;
+
+    width: 100%;
+    height: 80px;
+}
+
+header .header-back {
+    width: 100%;
+    height: 80px;
+
+    opacity: 0.0;
+    background: white;
+}
+
+/*logo*/
+header .header_logo {
+    width: 50%;
+}
+
+header .logo {
+    padding: 15px;
+}
+
+header .mlogo,
+.mmenu {
+    display: none;
+}
+
+
+/*导航栏链接*/
+header .header_ul {
+    position: absolute;
+    top: 14px;
+    left: 40%;
+    text-align: center;
+}
+
+header ul {
+
+    text-align: center;
+}
+
+header li {
+    display: inline;
+
+    margin-left: 45px;
+    padding: 10px;
+
+    border: 1px solid rgba(0, 0, 0, 0);
+    border-radius: 10px;
+}
+header li a{
+    text-decoration: none;
+}
+
+/*导航栏链接样式*/
+header .link {
+    font-size: 20px;
+
+    color: rgba(255, 255, 255, 0.924);
+}
+
+header .foucs:hover {
+    border: 1px solid #1163e6bd;
+}
+
+header .person {
+    position: absolute;
+    top: 25px;
+    right: 20px;
+}
+
+/*动态隐藏导航栏动画*/
+.slideUp {
+    -webkit-transition: transform .5s ease-in;
+    -o-transition: transform .5s ease-in;
+    transition: transform .5s ease-in;
+    -webkit-transform: translateY(-80px);
+    -ms-transform: translateY(-80px);
+    -o-transform: translateY(-80px);
+    transform: translateY(-80px);
+}
+
+
+/*动态隐藏导航栏动画*/
+.slideDown {
+    -webkit-transition: transform .5s ease-out;
+    -o-transition: transform .5s ease-out;
+    transition: transform .5s ease-out;
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    transform: translateY(0);
+    background: white;
+
+}
+
+
+/* 动态改变导航栏字体颜色 */
+.styles .link {
+    color: #000;
+}
+
+/*移动版适配样式*/
+
+/* @media screen and (max-width: 768px)
+{
+    header
+    {
+        width: 100%;
+        height: 6rem;
+
+        background: #000;
+    }
+    header .center
+    {
+        overflow: visible;
+    }
+    header .logo,
+    .header-back */
+/*header #headerurls*/
+/* {
+        display: none;
+    }
+    header .header_ul
+    {
+        top: 2.5rem;
+        left: 2.3rem;
+    }
+    header .mmenu
+    {
+        display: block;
+
+        width: 2.5rem;
+        height: 1.2rem;
+    }
+    header .mlogo
+    {
+        position: absolute;
+        top: 1.7rem;
+        left: 50%;
+
+        display: block;
+
+        width: 3.3rem;
+        height: 2.5rem;
+
+        transform: translateX(-50%);
+    }
+    header .person
+    {
+        top: 1.8rem;
+        right: 2.2rem;
+    }
+    #btn-joinus
+    {
+        font-size: 14px;
+        line-height: 40px;
+
+        position: fixed;
+        z-index: 9999;
+        right: 50%;
+        bottom: 20px;
+
+        width: 120px;
+
+        transform: translateX(50%);
+        text-align: center;
+
+        color: white;
+        background: url(../img/joinus-bg.png);
+        background-size: 100% 100%;
+    }
+    #header_ul
+    {
+        z-index: 9999;
+
+        width: 100%;
+        max-height: 25rem;
+    }
+    #header .headerurls
+    {
+        font-size: 1.6rem;
+        line-height: 5rem;
+
+        position: absolute;
+        top: 3.5rem;
+        left: -2.3rem;
+
+        display: none;
+
+        width: 100%;
+
+        background-color: black;
+    }
+    #header_ul .header-show
+    {
+        display: block;
+    }
+
+    header li
+    {
+        display: block;
+
+        width: 85%;
+        margin: 0 auto;
+        padding: 0;
+
+        text-align: left;
+
+        border: 0;
+        border-radius: 0;
+    }
+    #headerurls .link
+    {
+        display: block;
+
+        width: 100%;
+        height: 5rem;
+
+        border-bottom: #eaeaea 1px solid;
+    }
+    #headerurls li:last-child .link
+    {
+        border-bottom: 0;
+    }
+} */

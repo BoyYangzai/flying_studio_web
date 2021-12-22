@@ -1,0 +1,191 @@
+.meeting {
+    position: relative;
+
+    overflow: hidden;
+
+    min-width: 1200px;
+    height: 700px;
+}
+
+#mt-title {
+    position: absolute;
+    left: 190px;
+    top: 80px;
+    width: 240px;
+    height: 80px;
+}
+
+.share {
+    position: absolute;
+    top: 130px;
+
+    box-sizing: border-box;
+    width: 1200px;
+}
+
+.share span {
+    position: absolute;
+    left: 190px;
+    font-size: 55px;
+    font-weight: 550;
+}
+
+
+.s-left,
+.s-right {
+    float: left;
+
+    width: 590px;
+    height: 420px;
+}
+
+.s-left ul {
+    position: relative;
+    top: 170px;
+    left: 210px;
+
+    width: 400px;
+}
+
+.s-left li {
+    font-size: 16px;
+    line-height: 15px;
+
+    margin-bottom: 15px;
+
+    list-style-image: url('../../../public/blog/Shape.png');
+}
+
+.s-left a {
+    color: gray;
+}
+
+#s-more {
+    position: relative;
+    left: 190px;
+    top: 170px;
+    display: block;
+
+    width: 160px;
+    height: 42px;
+
+}
+
+#s-more img {
+    width: 100%;
+    height: 100%;
+}
+
+.s-right {
+    z-index: 999;
+
+    float: left;
+    overflow: hidden;
+    box-shadow: 2px 5px 15px #888;
+}
+
+/* 
+@media screen and (max-width: 768px)
+{
+    .meeting
+    {
+        position: relative;
+
+        width: 100%;
+        min-width: 0;
+        height: 52rem;
+    }
+
+    #mt-title
+    {
+        position: absolute;
+        top: 4rem;
+        right: 50%;
+
+        height: 2.5rem;
+
+        transform: translateX(50%);
+    }
+
+    .share
+    {
+        position: absolute;
+        top: 10rem;
+
+        box-sizing: border-box;
+        width: 100%;
+
+        border: 0;
+        box-shadow: 0 0 0 #888;
+    }
+
+    .s-right
+    {
+        width: 100%;
+        height: 20rem;
+    }
+    .s-right ul
+    {
+        position: relative;
+        top: 2rem;
+        left: 0;
+
+        width: 64vw;
+        margin: 0 18vw;
+    }
+
+    .s-right li
+    {
+        font-size: 14px;
+        line-height: 14px;
+
+        margin-bottom: 22px;
+
+        list-style-image: url('../ico/Shape.png');
+    }
+
+    .s-right a
+    {
+        color: gray;
+    }
+    #s-more
+    {
+        font-size: 24px;
+        line-height: 42px;
+
+        position: relative;
+        top: 2rem;
+        left: 50%;
+
+        display: block;
+
+        width: 140px;
+        height: 42px;
+
+        transform: translateX(-50%);
+        text-align: center;
+
+        color: #fe9b00;
+        border: 2px solid #fe9b00;
+        border-radius: 10px;
+    }
+    .s-left
+    {
+        float: none;
+        overflow: hidden;
+
+        width: 100vw;
+        height: 20rem;
+    }
+
+    .s-left img
+    {
+        display: block;
+
+        width: 70vw;
+        height: auto;
+        min-width: 26rem;
+        min-height: 20rem;
+        margin: 0 auto;
+    }
+} */
