@@ -1,0 +1,76 @@
+.bodycolor1 {
+  background: radial-gradient(
+      circle at 50% 0,
+      rgba(7, 165, 238, 0.449),
+      rgba(119, 118, 118, 0.253) 54.71%
+    ),
+    radial-gradient(
+      circle at 6.7% 75%,
+      rgba(0, 0, 255, 0.48),
+      rgba(0, 0, 255, 0) 44.44%
+    ),
+    radial-gradient(
+        circle at 93.3% 75%,
+        rgba(45, 241, 94, 0.82),
+        rgba(119, 118, 118, 0.151) 54.71%
+      )
+      rgba(226, 226, 135, 0.609);
+  border-radius: 50%;
+}
+.bodycolor2 {
+  background: radial-gradient(
+      circle at 50% 0,
+      rgba(173, 26, 173, 0.883),
+      rgba(142, 106, 192, 0.424) 67.11%
+    ),
+    radial-gradient(
+      circle at 6.7% 75%,
+      rgba(96, 214, 198, 0.356),
+      rgba(0, 217, 255, 0.178) 44.44%
+    ),
+    radial-gradient(
+        circle at 93.3% 75%,
+        rgba(32, 26, 122, 0.61),
+        rgba(8, 46, 216, 0.692) 54.71%
+      )
+      rgba(137, 7, 197, 0.876);
+  border-radius: 50%;
+}
+.bodycolor3 {
+  background: radial-gradient(
+      circle at 50% 0,
+      rgba(7, 219, 238, 0.692),
+      rgba(118, 119, 119, 0.253) 54.71%
+    ),
+    radial-gradient(
+      circle at 6.7% 75%,
+      rgba(3, 94, 240, 0.48),
+      rgba(0, 0, 255, 0) 44.44%
+    ),
+    radial-gradient(
+        circle at 93.3% 75%,
+        rgba(6, 247, 227, 0.692),
+        rgba(241, 2, 2, 0.808) 54.71%
+      )
+      rgba(5, 30, 255, 0.609);
+  border-radius: 50%;
+}
+.bodycolor4 {
+  background: radial-gradient(
+      circle at 50% 0,
+      rgba(238, 234, 7, 0.287),
+      rgba(119, 118, 118, 0.253) 54.71%
+    ),
+    radial-gradient(
+      circle at 6.7% 75%,
+      rgba(240, 137, 3, 0.788),
+      rgba(208, 255, 0, 0.335) 44.44%
+    ),
+    radial-gradient(
+        circle at 93.3% 75%,
+        rgba(247, 102, 6, 0.808),
+        rgba(241, 2, 2, 0.151) 54.71%
+      )
+      rgba(5, 122, 255, 0.342);
+  border-radius: 50%;
+}

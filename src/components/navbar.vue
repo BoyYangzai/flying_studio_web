@@ -1,6 +1,11 @@
 <template>
   <header id="header">
-      <img src="../../public/flyinglogo.png" alt="" class="flyinglogo"  @click="imgcolor"/>
+    <img
+      src="../../public/flyinglogo2.png"
+      alt=""
+      class="flyinglogo"
+      @click="imgcolor"
+    />
 
     <div class="header-back"></div>
 
@@ -47,6 +52,18 @@
           @mouseleave="pointer"
           :class="{ pointer: ispointer }"
           @click="topath"
+          topath="/starmembers"
+        >
+          <a class="link family" @click="topath" topath="/starmembers"
+            >优秀成员</a
+          >
+        </li>
+        <li
+          class="foucs"
+          @mouseenter="pointer"
+          @mouseleave="pointer"
+          :class="{ pointer: ispointer }"
+          @click="topath"
           topath="/blog"
         >
           <a class="link family" @click="topath" topath="/blog">技术博客</a>
@@ -77,15 +94,17 @@ export default {
   },
   methods: {
     topath(e) {
-      this.$router.push(e.target.getAttribute("topath"));
+      this.$router.push(e.target.getAttribute("topath")).catch((err) => {
+        console.log("输出报错", err);
+      });
     },
     pointer() {
       console.log("123");
       this.ispointer = !this.ispointer;
     },
-    imgcolor(){
-       this.$emit('changecolor')
-    }
+    imgcolor() {
+      this.$emit("changecolor");
+    },
   },
 };
 </script>

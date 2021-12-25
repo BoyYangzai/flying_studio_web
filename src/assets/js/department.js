@@ -4,6 +4,7 @@ var prev = document.getElementById("depart_prev");
 var next = document.getElementById("depart_next");
 
 
+
 next.onclick = function () {
     if (num > 5) {
         num = 0;

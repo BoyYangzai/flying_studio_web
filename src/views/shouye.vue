@@ -2,7 +2,7 @@
   <div>
     <div class="shouye">
       <video
-        src="../../public/Cloud Fly-thru Video Loop.mov.mp4"
+        src="../../public/飞书20211225-171358.mp4"
         autoplay
         muted
         loop
@@ -11,23 +11,21 @@
       ></video>
       <img src="../../public/biglogo.png" alt="" class="biglogo" />
     </div>
-      <a href="https://mp.weixin.qq.com/s/9Garo40q6qYo_pnN6ax1SA" target="blank"
-        ><el-button round type="danger" size="" class="history"
-          >了解历史</el-button
-        ></a
-      >
+    <a href="https://mp.weixin.qq.com/s/9Garo40q6qYo_pnN6ax1SA" target="blank"
+      ><el-button round type="danger" size="" class="history"
+        >了解历史</el-button
+      ></a
+    >
 
-      <a
-        href="https://flyingstudio.feishu.cn/docs/doccnuWFYfcbHUZ65FmKB3iA6pf"
-        target="blank"
+    <a
+      href="https://flyingstudio.feishu.cn/docs/doccnuWFYfcbHUZ65FmKB3iA6pf"
+      target="blank"
+    >
+      <el-button round type="primary" size="" class="joinus"
+        >加入我们</el-button
       >
-        <el-button round type="primary" size="" class="joinus"
-          >加入我们</el-button
-        >
-      </a>
-  
+    </a>
   </div>
-  
 </template>
 
 <script>
@@ -43,7 +41,7 @@ export default {
   z-index: -1;
   width: 1920px;
   height: 100vh;
-  margin:  auto;
+  margin: auto;
 }
 .shouye video {
   position: absolute;
@@ -97,11 +95,11 @@ export default {
   );
   border: 1px solid rgba(241, 7, 97, 0.575);
 }
-a{
+a {
   position: absolute;
-top: 510px;
-    left: 326px;
-z-index: 999;
+  top: 510px;
+  left: 326px;
+  z-index: 999;
   width: 130px;
   height: 40px;
 }

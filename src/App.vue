@@ -1,22 +1,73 @@
 <template>
   <div id="app">
+    <div class="pet">
+      <img src="../public/翔工作室and矿大logo.png" alt="" />
+    </div>
+
     <Navbar ref="changecolor" @changecolor="changecolor"></Navbar>
     <transition :name="transitionName">
-      <router-view  class="Router"/>
+      <keep-alive>
+        <router-view class="Router" />
+      </keep-alive>
     </transition>
   </div>
 </template>
 <script>
 import Navbar from "./components/navbar.vue";
+import anime from "animejs/lib/anime.es";
 export default {
   data() {
-    return {};
+    return {
+      index: 2,
+      transitionName: "route",
+    };
   },
   methods: {
     changecolor() {},
   },
   components: { Navbar },
-  mounted() {},
+  mounted() {
+    var body = document.getElementsByTagName("body");
+    window.addEventListener("click", () => {
+      switch (this.index) {
+        case 1:
+          body[0].className = "bodycolor1";
+          break;
+        case 2:
+          body[0].className = "bodycolor2";
+          break;
+        case 3:
+          body[0].className = "bodycolor3";
+          break;
+        case 4:
+          body[0].className = "bodycolor4";
+          break;
+      }
+      this.index++;
+      if (this.index == 5) {
+        this.index = 1;
+      }
+    });
+    var anime1 = anime({
+      targets: [".pet"],
+      translateX: "310px",
+      rotate: 360,
+      borderRadius: 8,
+      duration: 2000,
+      loop: true,
+      direction: "alternate",
+    });
+    var path = anime.path(".i1 path");
+    anime({
+      targets: ".i1",
+      translateX: path("x"),
+      translateY: path("y"),
+      rotate: path("angle"),
+      easing: "linear",
+      duration: 2000,
+      loop: true,
+    });
+  },
   watch: {
     $route(to, from) {
       let isBack = this.$router.isBack; // 监听路由变化时的状态为前进还是后退
@@ -31,70 +82,53 @@ export default {
 };
 </script>
 <style>
+@import url(../src/assets/css/body.css);
+.icon {
+  position: absolute;
+  z-index: 99999;
+  width: 50px;
+  height: 500px;
+  vertical-align: -0.15em;
+  fill: currentColor;
+  overflow: hidden;
+}
 #header {
   z-index: 999;
 }
 #header ul li {
   z-index: 999;
 }
-.bodycolor1 {
-  background: radial-gradient(
-      circle at 50% 0,
-      rgba(7, 165, 238, 0.449),
-      rgba(119, 118, 118, 0.253) 54.71%
-    ),
-    radial-gradient(
-      circle at 6.7% 75%,
-      rgba(0, 0, 255, 0.48),
-      rgba(0, 0, 255, 0) 44.44%
-    ),
-    radial-gradient(
-        circle at 93.3% 75%,
-        rgba(45, 241, 94, 0.82),
-        rgba(119, 118, 118, 0.151) 54.71%
-      )
-      rgba(226, 226, 135, 0.609);
-  border-radius: 50%;
-}
-.bodycolor2 {
-  background: radial-gradient(
-      circle at 50% 0,
-      rgba(238, 7, 45, 0.449),
-      rgba(119, 118, 118, 0.253) 54.71%
-    ),
-    radial-gradient(
-      circle at 6.7% 75%,
-      rgba(240, 3, 3, 0.48),
-      rgba(0, 0, 255, 0) 44.44%
-    ),
-    radial-gradient(
-        circle at 93.3% 75%,
-        rgba(243, 247, 6, 0.897),
-        rgba(241, 2, 2, 0.151) 54.71%
-      )
-      rgba(5, 30, 255, 0.609);
-  border-radius: 50%;
-}
+
 .Router {
   position: fixed;
   z-index: 0;
-  top: 0; 
+  top: 0;
   left: 0;
-  width: 100%;
- transition: all 1s ease;
+  width: 1600px;
+  transition: all 0.6s ease;
 }
- 
+
 .slide-left-enter,
- .slide-right-leave-active {
- opacity: 0;
- -webkit-transform: translate(100%, 0);
- transform: translate(50%, 0);
+.slide-right-leave-active {
+  opacity: 0;
+  -webkit-transform: translate(100%, 0);
+  transform: translate(60%, 0);
 }
- 
+
 .slide-left-leave-active,
 .slide-right-enter {
- opacity: 0;
- -webkit-transform: translate(100%, 0);
- transform: translate(50%, 0) ;
+  opacity: 0;
+  -webkit-transform: translate(100%, 0);
+  transform: translate(60%, 0);
+}
+
+.pet {
+  position: absolute;
+  z-index: 9999;
+  top: 110px;
+}
+.pet img {
+  width: 72px;
+  height: 72px;
 }
 </style>

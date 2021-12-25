@@ -1,5 +1,5 @@
 <template>
-  <section class="depart" id="depart" >
+  <section class="depart" id="depart">
     <div class="center" style="width: 1500px">
       <img
         src="../../public/aboutus/depart-img.png"
@@ -49,7 +49,7 @@
             </p>
             <img src="../../public/aboutus/group_view.jpg" alt="视觉" />
           </div>
-          
+
           <div class="depart_slide">
             <span>视频组</span>
             <p>
@@ -57,30 +57,26 @@
               Effects等专业软件进行制作动画和剪辑视频，组内成员思维新颖，工作激情。延时摄影微电影，文艺范十足！
             </p>
             <img src="../../public/aboutus/group_video.jpg" alt="视频" />
-            
           </div>
-          
         </div>
-        
       </div>
-     
     </div>
-     <a
-        href="javascript:;"
-        id="depart_prev"
-        class="d-arrow d_prev"
-        @click="preclick"
-      >
-        <img src="../../public/aboutus/right2.png" alt="" class="d-btn1" />
-      </a>
-      <a
-        href="javascript:;"
-        id="depart_next"
-        class="d-arrow d_next"
-        @click="nextclick"
-      >
-        <img src="../../public/aboutus/left2.png" alt="" class="d-btn2" />
-      </a>
+    <a
+      href="javascript:;"
+      id="depart_prev"
+      class="d-arrow d_prev"
+      @click="preclick"
+    >
+      <img src="../../public/aboutus/right2.png" alt="" class="d-btn1" />
+    </a>
+    <a
+      href="javascript:;"
+      id="depart_next"
+      class="d-arrow d_next"
+      @click="nextclick"
+    >
+      <img src="../../public/aboutus/left2.png" alt="" class="d-btn2" />
+    </a>
   </section>
 </template>
 <script>
@@ -117,32 +113,34 @@ export default {
 </script>
 <style scoped>
 @import url(../assets/css/department.css);
-#depart{
-    background-color: transparent;
-    height: 100%;
+#depart {
+  background-color: transparent;
+  height: 100%;
 }
 .d-arrow {
-    position: absolute;
-    display: block;
-    width: 70px;
-    height: 70px;
-    top: 300px;
+  position: absolute;
+  top: 300px;
 }
-.d-btn1{
-    position: absolute;
-    left: 526px;
-    width: 120px;
+.d-btn1 {
+  position: absolute;
+  left: 454px;
+  width: 120px;
 }
-.d-btn2{
-    position: absolute;
+.d-btn2 {
+  position: absolute;
 
-    left:587px ;
-    width: 120px;
-
-    }
-    .depart{
-        z-index: 888;
-        margin-left: 180px;
-        height: 900px;
-    }
+  left: 518px;
+  width: 120px;
+}
+.depart {
+  z-index: 888;
+  margin-left: 180px;
+  height: 900px;
+}
+.depart_hidden {
+  position: relative;
+  width: 1640px;
+  height: 700px;
+  overflow: hidden;
+}
 </style>

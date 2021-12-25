@@ -4,12 +4,13 @@ import shouye from '../views/shouye.vue'
 import productinfo from '../views/productinfo.vue'
 import aboutus from '../views/aboutus.vue'
 import blog from '../views/blog.vue'
+import starmembers from '../views/starmembers.vue'
 Vue.use(VueRouter)
 
 const routes = [
   {
     path: '/',
-    component:shouye
+    component: productinfo
 
   },
   {
@@ -19,8 +20,8 @@ const routes = [
   },
   {
     path: '/productinfo',
-    name:'porductinfo',
-    component: productinfo 
+    name: 'porductinfo',
+    component: productinfo
   },
   {
     path: '/aboutus',
@@ -31,12 +32,16 @@ const routes = [
     path: '/blog',
     name: 'blog',
     component: blog
+  }, {
+    path: '/starmembers',
+    name: 'starmembers',
+    component: starmembers
   }
 ]
 
 const router = new VueRouter({
   routes,
-  mode:'history'
+  mode: 'history'
 })
 
 export default router
