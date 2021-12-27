@@ -94,8 +94,10 @@ export default {
   },
   methods: {
     topath(e) {
+
       this.$router.push(e.target.getAttribute("topath")).catch((err) => {
         console.log("输出报错", err);
+
       });
     },
     pointer() {

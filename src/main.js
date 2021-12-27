@@ -14,3 +14,4 @@ new Vue({
   render: h => h(App)
 }).$mount('#app')
 
+window.localStorage.setItem('shuaxin', '1')

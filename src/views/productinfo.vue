@@ -12,7 +12,11 @@
             <div class="slider__item">
               <div class="nm">矿小助App</div>
               <a href="https://kxz.atcumt.com"></a>
-              <img src="../../public/productinfo/kxz.png" alt="0" />
+              <img
+                src="../../public/productinfo/kxz.png"
+                @load="refresh"
+                alt="0"
+              />
               <p class="ab">
                 <br />
                 <span class="slider__caption family"
@@ -141,20 +145,19 @@ export default {
       console.log("dian");
       this.$refs.play.start();
     },
+    refresh() {},
   },
   created() {
-    setTimeout(() => {
-      this.$router.push("/aboutus");
-    }, 1000);
-    setTimeout(() => {
-      this.$router.push("/starmembers");
-    }, 2000);
-    setTimeout(() => {
-      this.$router.push("/blog");
-    }, 3200);
-    setTimeout(() => {
-      this.$router.push("/shouye");
-    }, 3900);
+    //解决先加载首页轮播图失效的bug 但是又出现另一个bug--第二页必须先刷新 此时壁纸颜色会变回第一张
+    if (window.localStorage.getItem("shuaxin") == "1") {
+      setTimeout(() => {
+        window.location.reload();
+        window.localStorage.setItem("shuaxin", "2");
+      }, 1000);
+    }
+    var body = document.getElementsByTagName("body");
+
+    body[0].className = "bodycolor" + window.localStorage.getItem("bgcflag"); //自动刷新且背景不变  bug算是掩盖了换行，就是耗内存
   },
   mounted() {},
   components: { Play },

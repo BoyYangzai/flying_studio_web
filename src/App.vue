@@ -43,9 +43,12 @@ export default {
           body[0].className = "bodycolor4";
           break;
       }
+      window.localStorage.setItem("bgcflag", this.index); //为修复轮播图做准备
+
       this.index++;
       if (this.index == 5) {
         this.index = 1;
+        window.localStorage.setItem("bgcflag", this.index); //为修复轮播图做准备
       }
     });
     var anime1 = anime({
