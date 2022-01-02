@@ -31,37 +31,18 @@ header .mlogo,
 
 
 /*导航栏链接*/
-header .header_ul {
-    position: absolute;
-    top: 14px;
-    left: 40%;
-    text-align: center;
-}
 
 header ul {
 
     text-align: center;
 }
 
-header li {
-    display: inline;
 
-    margin-left: 45px;
-    padding: 10px;
-
-    border: 1px solid rgba(0, 0, 0, 0);
-    border-radius: 10px;
-}
 header li a{
     text-decoration: none;
 }
 
 /*导航栏链接样式*/
-header .link {
-    font-size: 20px;
-
-    color: rgba(255, 255, 255, 0.924);
-}
 
 header .foucs:hover {
     border: 1px solid #1163e6bd;

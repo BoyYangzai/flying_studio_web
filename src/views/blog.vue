@@ -33,8 +33,9 @@ export default {
 </script>
 <style scoped>
 @import url(../assets/css/meeting.css);
-.meeting {
-  margin-top: 140px;
+@media screen and (min-width:500px) {
+  .meeting {
+  transform: translate(0,200px);
   margin-left: 240px;
 }
 .share span {
@@ -60,5 +61,35 @@ export default {
   position: absolute;
   top: -80px;
   left: 650px;
+}
+}
+
+@media screen and (max-width:500px) {
+.s-right ,.s-right img{
+  display: none;
+}
+#mt-title {
+  position: absolute;
+  left: 2.4rem;
+  top: 16.3rem;
+  width: 20rem;
+  height: 8.5rem;
+}
+.s-left {
+  position: absolute;
+  width: 10rem;
+  top: 25.5rem;
+  left: 2.4rem;
+}
+.s-left img{
+  width: 10rem;
+}
+.share span{
+  position: absolute;
+  top:11rem;
+  margin-left: 2.2rem;
+  font-size: 4.4rem;
+  font-weight: 700;
+}
 }
 </style>

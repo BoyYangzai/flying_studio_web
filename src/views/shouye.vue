@@ -36,7 +36,8 @@ export default {
 </script>
 
 <style scoped>
-.shouye {
+@media screen and (min-width:500px) {
+  .shouye {
   position: relative;
   z-index: -1;
   width: 1920px;
@@ -103,4 +104,30 @@ a {
   width: 130px;
   height: 40px;
 }
+}
+@media screen and (max-width:500px) {
+video{
+  display: none;
+}
+.biglogo{
+  position: absolute;
+  top: 16rem;
+  margin-left: 50%;
+  transform: translate(-50%,0);
+width: 16rem;
+}
+.history{
+  position: absolute;
+  margin-top: 23rem;
+    margin-left: 50%;
+  transform: translate(-120%,0);
+}
+.joinus{
+   position: absolute;
+  margin-top: 23rem;
+   margin-left: 50%;
+}
+
+}
+
 </style>

@@ -86,7 +86,9 @@ export default {
 </script>
 <style>
 @import url(../src/assets/css/body.css);
-.icon {
+
+@media  screen and (min-width: 500px) {
+  .icon {
   position: absolute;
   z-index: 99999;
   width: 50px;
@@ -134,4 +136,19 @@ export default {
   width: 72px;
   height: 72px;
 }
+}
+
+@media  screen and (max-width: 500px) {
+  .pet {
+  position: absolute;
+  z-index: 9999;
+  top: 110px;
+}
+.pet img {
+  width: 3.4rem;
+  height: 3.4rem;
+  
+}
+}
+
 </style>

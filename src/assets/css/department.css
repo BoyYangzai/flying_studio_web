@@ -1,4 +1,5 @@
-.depart{
+@media screen and (min-width:500px) {
+    .depart{
     position: relative;
     height: 800px;
     width: 100%;
@@ -57,21 +58,16 @@
     height: 550px;
 }
 
-.d-arrow{
-    position: absolute;
-    display: block;
-    top: 340px;
-}
+
 
 .d-btn{
     width: 100%;
     height: 100%;
 }
 
-.d_prev{
-    right: 830px;
-}
+
 
 .d_next{
     right: 0px;
+}
 }

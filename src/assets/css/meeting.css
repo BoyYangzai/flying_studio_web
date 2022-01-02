@@ -1,4 +1,5 @@
-.meeting {
+@media  screen and (min-width:500px) {
+    .meeting {
     position: relative;
 
     overflow: hidden;
@@ -82,6 +83,7 @@
     float: left;
     overflow: hidden;
     box-shadow: 2px 5px 15px #888;
+}
 }
 
 /* 

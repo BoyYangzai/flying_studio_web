@@ -1,4 +1,5 @@
-        * {
+@media screen and (min-width:500px) {
+            * {
             padding: 0;
             margin: 0;
             box-sizing: border-box;
@@ -83,13 +84,13 @@
 }
 
 
-.starmembers .goods{
+.starmembers .members{
     margin: 0 auto;
     width: 1240px;
     height: 628px;
     
 }
-.starmembers .goods .big{
+.starmembers .members .big{
     float: left;
     width: 234px;
     height: 628px;
@@ -97,13 +98,13 @@
     transition: all 0.8s;
 
 }
-.starmembers .goods .big img {
+.starmembers .members .big img {
     width: 100%;
     height: 100%;
     cursor: pointer;
 
 }
-.starmembers .goods .big:hover{
+.starmembers .members .big:hover{
     transform: translate(0,-4px);
     box-shadow: 3px 4px  80px  1px rgba(0,0,0,0.2);
 }
@@ -121,10 +122,10 @@ background-color: white;
          transform: translate(0,-4px);
     box-shadow: 3px 4px  10px  6px rgba(0,0,0,0.5);
  }
-.goods :nth-child(2),.small:nth-child(6){
+.members :nth-child(2),.small:nth-child(6){
     margin-right: 0;
 }
-.goods :nth-child(9),.goods :nth-child(8),.goods :nth-child(7),.goods :nth-child(6)
+.members :nth-child(9),.members :nth-child(8),.members :nth-child(7),.members :nth-child(6)
 {
     margin-top: 30px;
 }
@@ -162,6 +163,75 @@ background-color: white;
     font-size: 16px;
 
 }
+.small img{
+  width: 180px;
+  height: 190px;
+  margin-top: 7px;
+  transform: translate(0,3px);
+  margin-left: 31px;
+}
+.starmembers {
+  margin-top: 90px;
+  margin-left: 38px;
+}
 
 
+}
+@media screen and (max-width:500px) {
+    .big{
+        display: none;
+    }
+.members{
+    width: 100vw;
+}
+.small{
+    cursor: pointer;  
+    width: 100%;
+    text-align: center;
+    margin-left: 0;
+}
 
+.small img{
+    margin-top: 3rem;
+  width: 10rem;
+  height: 10rem;
+}
+svg{
+    display: none;
+}
+.starmembers {
+  margin-top: 9rem;
+  margin-left: 0;
+}
+.smallbox{
+    display: none;
+}
+.small .smallhui{
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    font-size: 12px;
+    color: rgba(195, 115, 24, 0.849);
+}
+
+.small{
+    margin-top: 3rem;
+background-color: rgba(255, 255, 255, 0.226);
+    height:23rem;
+    transition: all 0.8s;
+
+}
+.small .price{
+    margin-top: -5px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    color: rgba(255, 116, 23, 0.815);
+    font-size: 16px;
+
+}
+.card{
+    font-size: 2.4rem;
+    color: rgba(224, 150, 32, 0.815);
+}
+}

@@ -28,7 +28,7 @@
         </a>
       </div>
     </div>
-    <div class="goods">
+    <div class="members">
       <div class="big">
         <img src="../../public/starmembers/big.jpg" alt="" />
       </div>
@@ -106,17 +106,8 @@ export default {
 </script>
 <style scoped>
 @import url(../assets/css/小米.css);
-.starmembers {
-  margin-top: 90px;
-  margin-left: 38px;
-}
-.small img{
-  width: 180px;
-  height: 190px;
-  margin-top: 7px;
-  transform: translate(0,3px);
-  margin-left: 31px;
-}
+
+
 .card .tips {
   position: absolute;
   font-size: 16px;
